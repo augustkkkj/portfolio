@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --cor1: #FF00EE;
+    --cor2: #fff;
+}
+
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    align-items: center;
+}
+
+.logo a{
+    color: var(--cor1);
+    letter-spacing: 10px;
+    font-weight: 600;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+
+.name h1{
+    font-weight: 300;
+    text-align: right;
+    color: var(--cor1);
+}
+
+.name span{
+    text-align: left;
+    font-weight: 600;
+    color: var(--cor1);
+}
+
+/*---CENTRO---*/
+.center{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+
+.circo{
+    width: 500px;
+    height: 500px;
+    border: 20px solid var(--cor1);
+    border-radius: 50%;
+    box-shadow: rgb(255 0 212 / 56%) 0px 0px 53px;
+    position: absolute;
+    top: 185px;
+}
+
+
+.perfil{
+    width: 30%;
+    position: relative;
+    z-index: 2;
+    top: 145px;
+}
+
+
+/*---INFORMAÇÕES---*/
+.info-right{
+    display: flex;
+    gap: 75px;
+    position: absolute;
+    top: 50%;
+    right: -140px;
+    text-align: right;
+    transform: translateY(-50%);
+    transform:  rotate(90deg);
+}
+
+
+.info-right a{
+    color: var(--cor2);
+}
+
+
+/*---SOCIAL---*/
+
+.social{
+    position: absolute;
+    bottom: 20px;
+    right: 70px;
+    display: flex;
+    gap: 15px;
+}
+
+.social i{
+    color: var(--cor2);
+}
+
+.social .bi-linkedin{
+    color: var(--cor1);
+}
+
+.social .bi-twitter-x{
+    color: var(--cor1);
+}
+
+
+/*---LOCAL---*/
+.web{
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    display: flex;
+    gap: 15px;
+    color: var(--cor2);
+}
+
+.web-text h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+small .de{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--cor1);
+}
